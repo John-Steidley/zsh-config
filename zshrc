@@ -15,6 +15,7 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 alias gdm="git diff \$(git merge-base origin/master HEAD)"
 alias gdmn="gdm --name-only | cat"
+alias gs="git status -sb"
 
 # Disable sharing command history between shells
 setopt no_share_history
