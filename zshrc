@@ -20,9 +20,6 @@ alias gs="git status -sb"
 # Disable sharing command history between shells
 setopt no_share_history
 
-# Set up java environment
-eval "$(jenv init -)"
-
 # for Master Password
 export MP_FULLNAME="John Kenneth Steidley"
 
