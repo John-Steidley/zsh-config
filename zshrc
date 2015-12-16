@@ -14,6 +14,9 @@ export GOPATH=$HOME/.go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 export PATH=$PATH:~/.cargo/bin
+export PATH=$PATH:~/.multirust/toolchains/stable/cargo/bin
+export PATH=$PATH:~/.multirust/toolchains/beta/cargo/bin
+export PATH=$PATH:~/.multirust/toolchains/nightly/cargo/bin
 
 alias gdm="git diff \$(git merge-base origin/master HEAD)"
 alias gdmn="gdm --name-only | cat"
