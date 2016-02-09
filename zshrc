@@ -4,7 +4,7 @@ HYPHEN_INSENSITIVE="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 # (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git brew npm grunt bower fabric)
+plugins=(git brew npm grunt fabric)
 
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"
 source $ZSH/oh-my-zsh.sh
@@ -14,19 +14,12 @@ export GOPATH=$HOME/.go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 export PATH=$PATH:~/.cargo/bin
-export PATH=$PATH:~/.multirust/toolchains/stable/cargo/bin
-export PATH=$PATH:~/.multirust/toolchains/beta/cargo/bin
-export PATH=$PATH:~/.multirust/toolchains/nightly/cargo/bin
 
 alias gdm="git diff \$(git merge-base origin/master HEAD)"
 alias gdmn="gdm --name-only | cat"
-alias gs="git status -sb"
 
 # Disable sharing command history between shells
 setopt no_share_history
 
 # for Master Password
 export MP_FULLNAME="John Kenneth Steidley"
-
-# Increase max file handle limit
-ulimit -n 4096
