@@ -23,3 +23,6 @@ setopt no_share_history
 
 # for Master Password
 export MP_FULLNAME="John Kenneth Steidley"
+
+# making anki cards easily
+alias spell="~/zsh-config/spell.sh"
