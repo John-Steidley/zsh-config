@@ -18,6 +18,8 @@ export PATH=$PATH:~/.cargo/bin
 alias gdm="git diff \$(git merge-base origin/master HEAD)"
 alias gdmn="gdm --name-only | cat"
 
+alias bds="cd ~/code/blend/borrower-datastore/src/borrower-datastore/"
+
 # Disable sharing command history between shells
 setopt no_share_history
 
