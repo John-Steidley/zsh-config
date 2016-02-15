@@ -17,6 +17,8 @@ export PATH=$PATH:~/.cargo/bin
 
 alias gdm="git diff \$(git merge-base origin/master HEAD)"
 alias gdmn="gdm --name-only | cat"
+alias vgd="vim \$(git diff --name-only --relative)"
+alias vgdm="vim \$(git diff \$(git merge-base origin/master HEAD) --name-only --relative)"
 
 alias bds="cd ~/code/blend/borrower-datastore/src/borrower-datastore/"
 
