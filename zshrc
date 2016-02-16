@@ -20,7 +20,7 @@ alias gdmn="gdm --name-only | cat"
 alias vgd="vim \$(git diff --name-only --relative)"
 alias vgdm="vim \$(git diff \$(git merge-base origin/master HEAD) --name-only --relative)"
 
-alias bds="cd ~/code/blend/borrower-datastore/src/borrower-datastore/"
+alias bds="cd \$GOPATH/src/github.com/blendlabs/connectivity"
 
 # Disable sharing command history between shells
 setopt no_share_history
@@ -30,3 +30,6 @@ export MP_FULLNAME="John Kenneth Steidley"
 
 # making anki cards easily
 alias spell="~/zsh-config/spell.sh"
+
+# increase open file limit
+ulimit -n 4096
