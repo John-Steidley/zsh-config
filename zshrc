@@ -14,6 +14,7 @@ export GOPATH=$HOME/.go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 export PATH=$PATH:~/.cargo/bin
+export PATH=$PATH:~/zsh-config
 
 alias gdm="git diff \$(git merge-base origin/master HEAD)"
 alias gdmn="gdm --name-only | cat"
@@ -27,9 +28,6 @@ setopt no_share_history
 
 # for Master Password
 export MP_FULLNAME="John Kenneth Steidley"
-
-# making anki cards easily
-alias spell="~/zsh-config/spell.sh"
 
 # increase open file limit
 ulimit -n 4096
