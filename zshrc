@@ -18,6 +18,7 @@ export PATH=$PATH:~/zsh-config
 
 alias gdm="git diff \$(git merge-base origin/master HEAD)"
 alias gdmn="gdm --name-only | cat"
+alias gs="git status"
 alias vgd="vim \$(git diff --name-only --relative)"
 alias vgdm="vim \$(git diff \$(git merge-base origin/master HEAD) --name-only --relative)"
 
