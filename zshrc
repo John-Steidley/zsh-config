@@ -24,6 +24,8 @@ alias vgdm="vim \$(git diff \$(git merge-base origin/master HEAD) --name-only --
 
 alias conn="cd \$GOPATH/src/github.com/blendlabs/connectivity"
 
+alias lc="wc -l"
+
 # Disable sharing command history between shells
 setopt no_share_history
 
