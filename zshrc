@@ -4,7 +4,7 @@ HYPHEN_INSENSITIVE="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 # (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git brew npm grunt)
+plugins=(brew npm grunt)
 
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"
 source $ZSH/oh-my-zsh.sh
@@ -19,6 +19,9 @@ export PATH=$PATH:~/zsh-config
 alias gdm="git diff \$(git merge-base origin/master HEAD)"
 alias gdmn="gdm --name-only | cat"
 alias gs="git status"
+alias gd="git diff"
+alias gc="git commit"
+alias ga="git add"
 alias vgd="vim \$(git diff --name-only --relative)"
 alias vgdm="vim \$(git diff \$(git merge-base origin/master HEAD) --name-only --relative)"
 
