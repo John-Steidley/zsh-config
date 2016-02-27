@@ -22,6 +22,7 @@ alias gs="git status"
 alias gd="git diff"
 alias gc="git commit"
 alias ga="git add"
+alias gap="git add -p"
 alias vgd="vim \$(git diff --name-only --relative)"
 alias vgdm="vim \$(git diff \$(git merge-base origin/master HEAD) --name-only --relative)"
 
