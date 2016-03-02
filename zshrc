@@ -27,6 +27,7 @@ alias vgd="vim \$(git diff --name-only --relative)"
 alias vgdm="vim \$(git diff \$(git merge-base origin/master HEAD) --name-only --relative)"
 
 alias conn="cd \$GOPATH/src/github.com/blendlabs/connectivity"
+function code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCodeInsiders" --args "$@"; }
 
 alias lc="wc -l"
 
