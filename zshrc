@@ -32,6 +32,8 @@ alias vgdm="vim \$(git diff \$(git merge-base origin/master HEAD) --name-only --
 alias conn="cd \$GOPATH/src/github.com/blendlabs/connectivity"
 
 alias lc="wc -l"
+alias redo='while [ $? -ne 0 ]; do $(fc -ln -1); done'
+alias stress='while [ $? -eq 0 ]; do $(fc -ln -1); done'
 
 # Disable sharing command history between shells
 setopt no_share_history
