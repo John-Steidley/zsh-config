@@ -29,7 +29,8 @@ alias gap="git add -p"
 alias vgd="vim \$(git diff --name-only --relative)"
 alias vgdm="vim \$(git diff \$(git merge-base origin/master HEAD) --name-only --relative)"
 
-alias conn="cd \$GOPATH/src/github.com/blendlabs/connectivity"
+alias con="cd \$GOPATH/src/github.com/blendlabs/connectivity"
+alias ble="cd ~/code/blend"
 
 alias lc="wc -l"
 alias redo='while [ $? -ne 0 ]; do $(fc -ln -1); done'
