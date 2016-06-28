@@ -27,6 +27,7 @@ alias gco="git checkout"
 alias gg="git grep"
 alias ga="git add"
 alias gap="git add -p"
+alias squash="git rebase -i \$(git merge-base HEAD origin/master)"
 
 alias con="cd \$GOPATH/src/github.com/blendlabs/connectivity"
 alias ble="cd ~/code/blend"
