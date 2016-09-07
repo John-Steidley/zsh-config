@@ -15,9 +15,6 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 export PATH=$PATH:~/.cargo/bin
 export PATH=$PATH:~/zsh-config
-export PATH=$PATH:~/.multirust/toolchains/nightly/cargo/bin
-export PATH=$PATH:~/.multirust/toolchains/beta/cargo/bin
-export PATH=$PATH:~/.multirust/toolchains/stable/cargo/bin
 
 export RUST_SRC_PATH=~/code/rust/src
 
