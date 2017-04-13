@@ -32,9 +32,6 @@ alias squash="git rebase -i \$(git merge-base HEAD origin/master)"
 alias lc="wc -l"
 alias stress='while [ $? -eq 0 ]; do $(fc -ln -1); done'
 
-# Disable sharing command history between shells
-setopt no_share_history
-
 # for Master Password
 export MP_FULLNAME="John Kenneth Steidley"
 
