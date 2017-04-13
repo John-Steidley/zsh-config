@@ -15,6 +15,8 @@ export PATH=$PATH:~/zsh-config
 
 export RUST_SRC_PATH=~/code/rust/src
 
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+
 alias gdm="git diff \$(git merge-base origin/master HEAD)"
 alias gdp="git diff \$(git merge-base origin/\$(git rev-parse --abbrev-ref HEAD) HEAD)"
 alias gdmn="gdm --name-only | cat"
