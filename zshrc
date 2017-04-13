@@ -4,7 +4,7 @@ HYPHEN_INSENSITIVE="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 # (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(brew npm grunt)
+plugins=(brew)
 
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"
 source $ZSH/oh-my-zsh.sh
@@ -31,9 +31,6 @@ alias ga="git add"
 alias gap="git add -p"
 alias squash="git rebase -i \$(git merge-base HEAD origin/master)"
 
-alias con="cd \$GOPATH/src/github.com/blendlabs/connectivity"
-alias ble="cd ~/code/blend"
-
 alias lc="wc -l"
 alias stress='while [ $? -eq 0 ]; do $(fc -ln -1); done'
 
@@ -42,9 +39,6 @@ setopt no_share_history
 
 # for Master Password
 export MP_FULLNAME="John Kenneth Steidley"
-
-# increase open file limit
-ulimit -n 4096
 
 man() {
     env \
