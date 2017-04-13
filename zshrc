@@ -9,9 +9,6 @@ plugins=(brew)
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"
 source $ZSH/oh-my-zsh.sh
 
-export GOROOT=/usr/local/opt/go/libexec
-export GOPATH=$HOME/.go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 export PATH=$PATH:~/.cargo/bin
 export PATH=$PATH:~/zsh-config
