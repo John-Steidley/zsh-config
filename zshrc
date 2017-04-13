@@ -35,6 +35,9 @@ alias stress='while [ $? -eq 0 ]; do $(fc -ln -1); done'
 # for Master Password
 export MP_FULLNAME="John Kenneth Steidley"
 
+# disable bang history expansion so that I can type ! without too much fuss
+setopt no_bang_hist
+
 man() {
     env \
         LESS_TERMCAP_mb=$(printf "\e[1;31m") \
