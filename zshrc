@@ -38,6 +38,7 @@ export MP_FULLNAME="John Kenneth Steidley"
 # disable bang history expansion so that I can type ! without too much fuss
 setopt no_bang_hist
 
+# Adds color to man pages
 man() {
     env \
         LESS_TERMCAP_mb=$(printf "\e[1;31m") \
