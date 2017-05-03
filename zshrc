@@ -9,9 +9,7 @@ plugins=(brew docker)
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"
 source $ZSH/oh-my-zsh.sh
 
-
 export PATH=$PATH:~/.cargo/bin
-export PATH=$PATH:~/zsh-config
 
 export RUST_SRC_PATH=~/code/rust/src
 
