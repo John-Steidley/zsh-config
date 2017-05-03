@@ -28,6 +28,7 @@ alias gcam="git commit -am"
 alias gco="git checkout"
 alias ga="git add"
 alias gap="git add -p"
+alias gpu="git push -u origin \$(git rev-parse --abbrev-ref HEAD)"
 alias squash="git rebase -i \$(git merge-base HEAD origin/master)"
 
 alias lc="wc -l"
