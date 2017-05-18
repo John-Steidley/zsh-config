@@ -6,10 +6,12 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(brew docker)
 
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"
 source $ZSH/oh-my-zsh.sh
 
-export PATH=$PATH:~/.cargo/bin
+PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
+PATH=$PATH:~/Library/Python/2.7/bin
+PATH=$PATH:~/.cargo/bin
+export PATH
 
 export RUST_SRC_PATH=~/code/rust/src
 
