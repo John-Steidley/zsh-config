@@ -15,8 +15,11 @@ export RUST_SRC_PATH=~/code/rust/src
 
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 
-alias gdm="git diff \$(git merge-base origin/master HEAD)"
-alias gdp="git diff \$(git merge-base origin/\$(git rev-parse --abbrev-ref HEAD) HEAD)"
+alias current_branch="git rev-parse --abbrev-ref HEAD"
+alias merge_base_branch="git merge-base origin/\$(current_branch) HEAD"
+alias merge_base_master="git merge-base origin/master HEAD"
+alias gdm="git diff \$(merge_base_master)"
+alias gdp="git diff \$(merge_base_branch)"
 alias gdmn="gdm --name-only | cat"
 alias gs="git status"
 alias gd="git diff --patience"
@@ -26,8 +29,12 @@ alias gcam="git commit -am"
 alias gco="git checkout"
 alias ga="git add"
 alias gap="git add -p"
-alias gpu="git push -u origin \$(git rev-parse --abbrev-ref HEAD)"
-alias squash="git rebase -i \$(git merge-base HEAD origin/master)"
+alias gb="git branch"
+alias gbm="git branch --merged"
+alias gbd="git branch -d"
+alias gbD="git branch -D"
+alias gpu="git push -u origin \$(current_branch)"
+alias squash="git rebase -i \$(merge_base_master)"
 
 alias lc="wc -l"
 alias stress='while [ $? -eq 0 ]; do $(fc -ln -1); done'
