@@ -40,6 +40,7 @@ alias gba="git branch -a"
 alias gbm="git branch --merged"
 alias gbd="git branch -d"
 alias gbD="git branch -D"
+alias gf="git fetch --prune --tags"
 
 alias lc="wc -l"
 alias stress='while [ $? -eq 0 ]; do $(fc -ln -1); done'
