@@ -41,6 +41,7 @@ alias gbm="git branch --merged"
 alias gbd="git branch -d"
 alias gbD="git branch -D"
 alias gf="git fetch --prune --tags"
+alias gpr="git pull --rebase origin master"
 
 alias lc="wc -l"
 alias stress='while [ $? -eq 0 ]; do $(fc -ln -1); done'
