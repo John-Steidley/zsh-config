@@ -53,14 +53,6 @@ export MP_FULLNAME="John Kenneth Steidley"
 # disable bang history expansion so that I can type ! without too much fuss
 setopt no_bang_hist
 
-# display the time with seconds in the prompt
-setopt PROMPT_SUBST
-PROMPT='[%D{%L:%M:%S}] '$PROMPT
-TMOUT=1
-TRAPALRM() {
-    zle reset-prompt
-}
-
 # Adds color to man pages
 man() {
     env \
