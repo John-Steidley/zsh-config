@@ -9,6 +9,7 @@ plugins=(brew docker)
 source $ZSH/oh-my-zsh.sh
 
 PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
+PATH="/usr/local/opt/python/libexec/bin:$PATH"
 PATH=$PATH:~/Library/Python/2.7/bin
 PATH=$PATH:~/.cargo/bin
 export PATH
