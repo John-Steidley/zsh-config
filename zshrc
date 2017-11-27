@@ -53,7 +53,7 @@ alias stress='while [ $? -eq 0 ]; do $(fc -ln -1); done'
 alias rr="rg --no-filename --no-line-number"
 
 # for Master Password
-export MP_FULLNAME="John Kenneth Steidley"
+export MPW_FULLNAME="John Kenneth Steidley"
 
 # disable bang history expansion so that I can type ! without too much fuss
 setopt no_bang_hist
