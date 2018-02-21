@@ -30,7 +30,7 @@ alias squash="git rebase -i \$(merge_base_master)"
 
 alias gs="git status"
 alias gd="git diff --patience --indent-heuristic"
-alias gl="git log"
+alias gl="git log --graph"
 alias gc="git commit"
 alias gcm="git commit -m"
 alias gca="git commit -a"
