@@ -2,6 +2,7 @@ export ZSH=/Users/John/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 HYPHEN_INSENSITIVE="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UPDATE_PROMPT=true
 # (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(brew docker terraform)
