@@ -13,6 +13,8 @@ PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
 PATH="/usr/local/opt/python/libexec/bin:$PATH"
 PATH=$PATH:~/Library/Python/2.7/bin
 PATH=$PATH:~/.cargo/bin
+PATH="/opt/homebrew/bin:$PATH"
+eval "$(rbenv init - zsh)"
 export PATH
 
 export RUST_SRC_PATH=~/code/rust/src
@@ -77,3 +79,10 @@ man() {
         LESS_TERMCAP_us=$(printf "\e[1;32m") \
             man "$@"
 }
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/john/.lmstudio/bin"
