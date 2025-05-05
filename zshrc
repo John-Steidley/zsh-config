@@ -14,6 +14,7 @@ PATH="/usr/local/opt/python/libexec/bin:$PATH"
 PATH=$PATH:~/Library/Python/2.7/bin
 PATH=$PATH:~/.cargo/bin
 PATH="/opt/homebrew/bin:$PATH"
+PATH=$PATH:$GHOSTTY_BIN_DIR
 eval "$(rbenv init - zsh)"
 export PATH
 
