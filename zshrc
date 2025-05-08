@@ -9,12 +9,12 @@ plugins=(brew docker)
 
 source $ZSH/oh-my-zsh.sh
 
-PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
+PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 PATH="/usr/local/opt/python/libexec/bin:$PATH"
-PATH=$PATH:~/Library/Python/2.7/bin
-PATH=$PATH:~/.cargo/bin
+PATH="$PATH:~/Library/Python/2.7/bin"
+PATH="$PATH:~/.cargo/bin"
 PATH="/opt/homebrew/bin:$PATH"
-PATH=$PATH:$GHOSTTY_BIN_DIR
+PATH="$PATH:$GHOSTTY_BIN_DIR"
 eval "$(rbenv init - zsh)"
 export PATH
 
